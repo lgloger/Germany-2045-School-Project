@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+input,
+button,
+textarea,
+select,
+label,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.firstSectionCon {
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/Zukunftsbild_Deutschland_2045.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textCon {
+  width: auto;
+  height: auto;
+}
+
+.textConHeader {
+  color: #ffffff;
+}
