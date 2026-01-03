@@ -40,6 +40,36 @@ body {
 }
 
 /* ========== GLOBAL STYLES ========== */
+.infoContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  --webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  background-color: var(--glass-effect-color);
+  /* background-color: var(--info-container-color); */
+  box-shadow: inset 0 0 1px var(--glass-effect-box-shadow);
+
+  padding: 20px 60px;
+  box-sizing: border-box;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 9999;
+}
+
+.infoText {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
 .section {
   width: 100%;
   max-width: 812px;
@@ -54,11 +84,16 @@ body {
 }
 
 .secSection {
-  max-width: calc(812px - 30px);
-  background-color: #f8f8f8;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
   box-sizing: border-box;
 
-  padding: 30px;
+  background-color: #f8f8f8;
 }
 
 .sectionTextCon {
@@ -75,6 +110,26 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.imageSection {
+  width: 100%;
+  max-width: 1255px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+  margin-top: 32px;
+  gap: 16px;
+}
+
+.sectionImage {
+  width: 50%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 8px;
 }
 
 @media only screen and (max-width: 810px) {
@@ -178,7 +233,7 @@ body {
   background-position: center;
   box-sizing: border-box;
   margin-bottom: 40px;
-  transition: background-image 1.5s ease;
+  transition: background-image 2.5s ease;
 }
 
 .textCon {
