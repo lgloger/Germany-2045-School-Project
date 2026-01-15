@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detuschland in 2045 - Herausforderungen & Chancen der Zukunft</title>
+    <title>Deutschland in 2045 - Herausforderungen & Chancen der Zukunft</title>
     <link
       rel="shortcut icon"
       href="assets/favicon/favicon.png"
@@ -11,28 +11,42 @@
     />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-    <script type="module" src="sliderInfo.js"></script>
-    <script type="module" src="animation.js"></script>
+    <link rel="stylesheet" href="styles/navBar.css" />
+    <script type="module" src="scripts/sliderInfo.js"></script>
+    <script type="module" src="scripts/animation.js"></script>
 
     <!-- Preload Images -->
     <link
       rel="preload"
       as="image"
-      href="assets/images/Zukunftsbild_Deutschland_2045.jpg"
+      href="assets/images/Zukunftsbild_Deutschland_2045.png"
     />
     <link
       rel="preload"
       as="image"
-      href="assets/images/Zukunftsbild_Deutschland_2_2045.jpg"
+      href="assets/images/Zukunftsbild_Deutschland_2_2045.png"
     />
   </head>
   <body>
-    <div class="infoContainer">
-      <span class="infoText"
-        >Die Inhalte auf dieser Website sind überwiegend KI-generiert.</span
-      >
+    <div id="infoContainer" class="infoContainerOut">
+      <div class="infoContainerCenter">
+        <span class="infoText"
+          >Inhalte auf dieser Website sind überwiegend KI-generiert.</span
+        >
+      </div>
     </div>
     <div class="firstSection" id="firstSectionCon">
+      <div class="firstSectionImageSourceCon">
+        <span id="firstSectionImageSource"
+          >NEWS&ART/ Visualisierung: Reinventing Society & Wire Collective &
+          German Zero/ www.realutopien.de/ Zukunftsbild 2045 /
+        </span>
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de"
+          class="firstSectionImageSourceText"
+          >CC BY-NC-SA 4.0</a
+        >
+      </div>
       <div class="textCon">
         <h1 class="textConHeader">Deutschland 2045</h1>
         <h3 class="textConDescription">
@@ -231,12 +245,12 @@
           <span class="highlight">7 Millionen Erwerbstätige</span> durch den
           Renteneintritt der Babyboomer.</span
         >
-        <span class="descriptionHeader">Der wirtschaftliche Preis</span>
+        <span class="descriptionHeader" style="margin-top: 7px;">Der wirtschaftliche Preis</span>
         <span class="sectionDescription"
           >Schon heute kostet der Wertschöpfungsverlust durch unbesetzte Stellen
           rund <span class="highlight">49 Milliarden Euro</span> pro Jahr.</span
         >
-        <span class="descriptionHeader">Die KI-Lösung</span>
+        <span class="descriptionHeader" style="margin-top: 7px;">Die KI-Lösung</span>
         <span class="sectionDescription"
           >KI kann Arbeitsprozesse effizienter gestalten, Routineaufgaben
           automatisieren und so Fachkräfte massiv entlasten. Besonders in der
@@ -245,7 +259,7 @@
         >
       </div>
     </div>
-    <div class="section" style="margin-bottom: 0">
+    <div class="section" style="margin-bottom: 0" id="partySection">
       <span class="sectionHeader"
         >Politische Vision – Die Zukunftspartei NEO</span
       >
@@ -281,11 +295,11 @@
     <div class="footer">
       <div class="firstFooterSec">
         <span class="footerHeader">Rechtliches</span>
-        <a class="footerText" href="https://lucagloger.pages.dev/impressum"
+        <a class="footerText" href="impressum.html"
           >Impressum</a
         >
         <a class="footerText" href="https://lucagloger.pages.dev/impressum"
-          >Literatur & Quellen</a
+          >Analyse & Quellen</a
         >
       </div>
       <div class="lastFooterSec">
