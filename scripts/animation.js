@@ -29,24 +29,17 @@ setInterval(changeBackground, 10000);
 // ========== INFOBAR ANIMATION ==========
 
 document.addEventListener("DOMContentLoaded", () => {
-  let lastScrollY = window.scrollY;
-  let scrollPeakY = lastScrollY;
-
   const infoContainer = document.getElementById("infoContainer");
 
   addEventListener("scroll", () => {
     let currentScrollY = window.scrollY;
 
-    if (currentScrollY > lastScrollY) {
-      scrollPeakY = currentScrollY;
-
+    if (currentScrollY >= 100) {
       infoContainer.classList.remove("infoContainerOut");
       infoContainer.classList.add("infoContainerIn");
     } else {
       infoContainer.classList.remove("infoContainerIn");
       infoContainer.classList.add("infoContainerOut");
     }
-
-    lastScrollY = currentScrollY;
   });
 });
