@@ -42,6 +42,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "Roboto", sans-serif;
+  background-color: var(--primary-backround-color);
 }
 
 #infoContainer {
